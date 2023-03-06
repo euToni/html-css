@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade</title>
+    <style>
+        body{
+            background-color: grey;
+        }
+        main{
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            min-width: 280px; /*Largura min de tela*/
+            max-width: 800px; /*Largura max antes de quebrar a tela*/
+            margin: auto;
+        }
+
+        img{
+            width: 100%; /*Tornando a largura da imagens em 100% do main*/
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <article>
+            <h1>Testando responsividade</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sapiente itaque mollitia placeat, tempora ab veritatis ad suscipit expedita numquam repellat ipsa reiciendis omnis aliquam! Non at mollitia doloribus impedit!Loremlorem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis neque quia, laudantium fuga sequi magnam inventore voluptate quas odit veritatis doloribus, eos numquam optio illum, voluptatem vel rem vitae accusamus.
+            </p>
+            <picture>
+                <source media="(max-width: 600px)" srcset="../exercicios/desafioRES/imagens/irina-blok-pq.jpg">
+                <img src="../exercicios/desafioRES/imagens/irina-blok.jpg" alt="IB"></picture>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sapiente itaque mollitia placeat, tempora ab veritatis ad suscipit expedita numquam repellat ipsa reiciendis omnis aliquam! Non at mollitia doloribus impedit!Loremlorem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis neque quia, laudantium fuga sequi magnam inventore voluptate quas odit veritatis doloribus, eos numquam optio illum, voluptatem vel rem vitae accusamus.
+            </p>
+        </article>
+    </main>
+</body>
+</html>

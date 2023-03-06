@@ -1,0 +1,148 @@
+@charset "UTF-8";
+@font-face {
+    font-family:'idroid';
+    src: url('fontes/idroid.otf') format('opentype');
+}
+
+a::after{
+    content: '[link]';
+    color: #0f850465;
+}
+
+mark{
+    background-color: white;
+    color: #31a01583;
+}
+
+body{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #adf89a;
+}
+
+#cabecalho{
+    background-color: rgba(18, 165, 18, 0.473);
+    color: white;
+    margin: auto;
+    width: auto;
+    padding: 15px;
+    
+}
+
+nav{
+    background-color: rgb(0, 43, 6);
+}
+
+nav > a{
+    margin-bottom: 1px;
+    text-align: left;
+    padding-bottom: 1px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+nav > a:hover{
+    text-decoration: underline;    
+}
+
+nav > a:active{
+    color: rgb(1, 51, 1);
+}
+
+header{
+    min-height: 150px;
+}
+
+header > p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: bold;
+}
+
+header > h1{
+    text-align: center;
+    color: white;
+}
+
+h1{
+    font-family: 'idroid';    
+    color: green;
+}
+
+h2{
+    font-family: 'idroid';
+    background-color: rgba(5, 136, 5, 0.507);
+    color: rgb(6, 80, 6);
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    text-align: justify;
+}
+
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.493);
+    background-color: white;
+}
+
+#aprender{
+    color: white;
+    padding: 10px;
+    background-color: rgba(0, 128, 0, 0.699);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+div{
+    background-color: #0cb88469;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold; 
+    padding: 10px;
+    border-radius: 15px;
+    
+}
+
+ul > li::before{
+   content: '✔ '; 
+   
+}
+
+div > ul{
+    text-decoration: underline;
+}
+
+div > p > a{
+    text-decoration: none;
+    color: #31a015;
+}
+
+#mark{
+    color: #31a015;
+}
+   
+
+footer > p{
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: italic; 
+    height: 10px;
+}
+
+#fim{
+background-color:  rgba(14, 129, 14, 0.699);
+
+}

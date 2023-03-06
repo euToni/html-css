@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+
+        /* SELETORES PERSONALIZADOS
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-element
+            > = children
+
+        */
+
+
+
+
+
+
+        h1{
+            text-align: center;
+            font-family:'Times New Roman', Times, serif;
+            background-color: rgb(241, 197, 143);
+            color: rgb(255, 255, 255);
+        }
+
+        hr{
+            width: 580px;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        a{
+            color: rgb(173, 1, 1);
+            text-decoration: none;
+            font-weight: bold;
+            
+        }
+
+        a:visited{ /*Se o link já tiver sido visitado.....*/
+            color: blueviolet;
+        }
+        
+        a:hover{ /*Ao passar o mouse irá:*/
+            color: black;
+            text-decoration: underline;
+            background-color: rgba(248, 170, 255, 0.534);
+        }
+
+      #li1:hover{
+        transform: scale(1.05); /*Ao passar o mouse por cima, irá expandir com um atraso de 0.5*/                           
+        transition: all 0.5s;
+      }
+
+      #li2:hover{        
+        transform: scale(1.05); /*Ao passar o mouse por cima, irá expandir com um atraso de 0.5*/
+        transition: all 0.5s;
+      }
+
+      #li3:hover{
+        transform: scale(1.05); /*Ao passar o mouse por cima, irá expandir com um atraso de 0.5*/
+        transition: all 0.5s;
+      }
+       
+      a:active{ /*Ao clicar*/
+        color: cornflowerblue;
+      }
+
+      a::after{
+        content: '- [link]';
+        text-decoration: none;
+        font-weight: normal;
+        color: rgb(206, 164, 245);
+      }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <hr>
+    <div id="div">
+        <ul>
+            <li id="li1"><a href="https://github.com/toninho33" target="_blank" rel="external">Repositório GitHub</a></li>
+            <li id="li2"><a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external">Canal do YTB</a></li>
+            <li id="li3"><a href="https://www.cursoemvideo.com"target="_blank" rel="external" >Site Curso em vídeo</a></li>
+        </ul>
+    </div>
+</body>
+</html>

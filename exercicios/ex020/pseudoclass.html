@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+
+        h1{
+            text-align: center;
+            background-color: beige;
+        }
+
+        div{
+            display: inline-block; /*Alinhando as caixas uma do lado da outra*/
+            background-color: lightgrey;
+            border: 1px solid black; /* shorthand tamanho, tipo e cor*/
+            text-align: center;
+            width: 200px; /*Largura*/
+            height: 200px; /*Altura*/
+            padding-top: 10px;
+            transition: all 0.9s; /*Tempo de resposta ao passar o mouse em cima*/
+            cursor: pointer; /*Mudando o cursor*/
+            justify-content: center ;
+            
+
+        }  
+         #d2, #d3{
+            color: white;  }
+        
+       #d4, #d1{
+        color: rgb(255, 255, 255);
+       } 
+        
+       div:hover{
+        background-color: black;
+        filter:blur(1px); /*Ao passar o mouse por cima, ira desfocar*/
+        border-radius: 100px;
+        transform: rotateZ(360deg) scale(1.2); /*Faz a div rodar no eixo Z, mas podemos optar por Y ou X tbm / o scale esta expandindo o item*/
+        filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5)); /*Irá adicionar uma sombra ao redor*/
+        cursor: crosshair;
+        
+       }
+
+    </style>
+
+</head>
+<body>
+    <h1>MAPAS VALORANT</h1>
+    <div id="d1">HAVEN</div>
+    <div id="d2">ICEBOX</div>
+    <div id="d3">ASCENT</div>
+    <div id="d4">PEARL</div>
+</body>
+</html>

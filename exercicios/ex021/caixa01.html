@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title> <!--TÍTULO, aba-->
+    <style>
+        h1{
+            background-color: lightgrey; /*FUNDO DO H1*/
+            height: 300px; /*ALTURA*/
+            width: 300px; /*LARGURA*/
+
+            border-width: 10px; /*LARGURA DA BORDA*/
+            border-style: solid; /*ESTILO DA BORDA*/
+            border-color: #130227; /*COR DA BORDA*/
+
+            /*podemos utilizar shorthands para economizar linhas nesse cód
+            ex: -> border: 10px solid #130227*/
+
+            padding-top: 10px;      /*Ajustando padding de cima do h1*/
+            padding-right: 10px;        /*Ajustando padding da direita do h1*/
+            padding-bottom: 10px;       /*Ajustando padding de baixo do h1*/
+            padding-left: 10px;     /*Ajustando padding da esquerda do h1*/
+
+            /*podemos utilizar shorthands para economizar linhas nesse cód
+            ex: -> padding: 10px 10px 10px 10px (respeitando a ordem do relógio)*/
+
+            margin-top:20px ;
+            margin-right:20px ;     /*margem*/
+            margin-bottom: 33px;
+            margin-left:20px ;
+
+            /*podemos utilizar shorthands para economizar linhas nesse cód
+            ex: -> margin: 20px 20px 33px 20px (ordem do relógio)*/
+
+            outline-width: 5px;   /*Outline = linha que fica entre borda e a margin*/
+            outline-style: dashed;
+            outline-color: rgb(170, 89, 245);
+
+            /*podemos utilizar shorthands para economizar linhas nesse cód
+            ex: -> outline: 5px dashed rgb(170, 89, 245)*/
+
+
+        }
+
+        a{  display: inline-block; /*transorma a caixa inline em inline block, possibilitado o uso de  height e width*/
+            border-width: 10px;     /*Ajustando a borda do link (largura)*/
+            border-style: solid;    /*Ajustando a borda do link (estilo)
+                                    (double, dotted, solid, dashed, groove) <- tipos de borda*/
+
+            border-color: bisque;    /*Ajustando a borda do link cor*/
+
+            padding-top: 5px;   
+            padding-right:10px;                 /*O MESMO EM CIMA*/
+            padding-bottom: 5px;
+            padding-left: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1> <!--Título-->
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+    <!--Paragrafo-->
+</body>
+</html>

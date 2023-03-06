@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Textos</title>
+    <style>
+        mark{
+            background-color: brown;
+        }
+    </style> 
+</head>
+<body>
+    <h1>Principais Formatações</h1>
+    <h2>Negrito / Destaque</h2>
+     <p>Nessa frase temos um <b>termo em negrito</b> utilizando a tag &lt;b &gt; (não semântica) </p>
+     <p>Nesta frase temos um <strong>termo em negrito</strong> utilizando a tag &lt;strong&gt; (semântica)</p> 
+     <h2>Itálico / Ênfase</h2>
+     
+     <p>Nesta frase, temos um <i>termo em destaque</i> utilizando a tag &lt;i &gt; (não semântica)</p>
+
+     <p>Nesta frase, temos um <em>termo em ênfase</em> usando a tag &lt;em&gt; (semântica) </p>
+
+     <h2>Texto Marcado</h2>
+     <p>Podemos criar também<mark style="background-color: rgb(99, 255, 99);"> um texto marcado</mark> usando a tag &lt;mark&gt;</p> <!--PARAMETRO STYLE na tag mark para mudar a cor da marcação do texto-->
+     <!--Podemos tabém criar uma tag style e criar um seletor para todos os mark ficarem com a mesma cor
+    obs: tag style no head-->
+    <p>Mais<mark> um texto marcado</mark>, dessa vez pelo style no head</p>
+
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> e um<small> texto pequeno</small> nesse parágrafo</p> <!--tag big não funciona mais, podemos aumentar a font no css
+    já a tag small funciona bem, as famosas "letras pequenas"-->
+    <h2>Texto deletado</h2>
+<p>Podemos marcar um <del>texto como excluído</del> para indicar que ele deve ser lido, mas não considerado, utilizando a tag &lt;del&gt; </p>
+<h2>Texto Inserido</h2>
+<p>Podemos marcar um<ins> texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois, utilizando a tag &lt;ins&gt;</p>
+
+<p>Existe também o sublinhado com a tag &lt;u&gt;(não semântica)</p>
+
+<h2>Texto sobrescrito</h2>
+<p>Para inserir coisas do tipo X<sup>20</sup>+3 => utilizando a tag &lt;sup&gt; superior</p>
+<h2>Texto subscrito</h2>
+<p>Para inserir coisas do tipo H<sub>2</sub>O => utilizando a tag &lt;sub&gt; inferior</p>
+</body>
+</html>
