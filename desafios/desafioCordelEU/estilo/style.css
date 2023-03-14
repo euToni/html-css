@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Passion One';
+    src: url('../fontes/Passion_One/PassionOne-Bold.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Sriracha';
+    src: url('../fontes/Sriracha/Sriracha-Regular.ttf') format('opentype');
+}
+
+:root{
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-1: 'Passion One', cursive;
+    --fonte-2: 'Sriracha', cursive;
+}
+
+* {
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    min-height: 200px;
+    
+}
+
+header > p {
+    padding-bottom: 40px;
+}
+
+h1{
+    font-family: var(--fonte-1);
+    font-size: 10vw;
+    color: white; 
+    padding-top: 80px;
+    padding-bottom: 20px; 
+}
+
+body{
+    min-height: 100vh;
+    background-color: white;
+    font-family: var(--fonte-padrao);
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
+}
+
+.normal{
+    font-family: var(--fonte-2);
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.img{
+    color: white;
+    font-family: var(--fonte-2);
+    margin-top: 30px;
+    margin-left: 20px;   
+}
+
+#img1{
+    background-image: url('../__MACOSX/imagens/flor.jpg');
+    background-color: white;
+    background-position: right top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 30px;
+    margin-left: 0px;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.479);
+}
+
+#img1 > p{
+    background-color: rgba(37, 0, 68, 0.562);
+    width: 550px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding: 5px; 
+}
+
+#img2{
+    background-image: url('../__MACOSX/imagens/carta.jpg');
+    background-color: white;
+    background-position: right top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 30px;
+    margin-left: 0px;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.479);
+}
+
+#img2 > p{
+    background-color: rgba(17, 12, 2, 0.719);
+    width: 550px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding: 5px; 
+}
+
+footer{
+    font-family: var(--fonte-padrao);
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 3px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+#cev{
+    font-style: italic;
+}
