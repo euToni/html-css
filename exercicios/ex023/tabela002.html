@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(179, 176, 176);
+        }
+
+        table{
+            position: relative;
+           width:500px;
+           border-collapse: collapse;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+
+        .num{
+            text-align: right;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(206, 206, 206);
+            color: black;
+        }
+
+        tbody > tr:nth-child(even){ /*PAR*/
+            background-color: rgba(114, 118, 122, 0.664);
+            color: white;
+            font-weight: bold;
+        }
+
+        tbody > tr:nth-child(odd){ /*ÍMPAR*/
+            background-color: white;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        p{
+            background-color: white;
+            padding: 10px;
+            font-family:'Courier New', Courier, monospace ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela Grande</h1>
+    <!--ANATOMIA PARA TABELAS GRANDES
+            TABLE
+            CAPTION -> legenda na tabela....parte superior
+                THEAD
+                    TR TD TH
+                    TBODY
+                        TR TD TH
+                        TFOOT
+                            TR TD TH-->
+            
+    <table>
+        <caption>População dos Estados</caption>
+        <thead>
+            <th>Estado</th>
+            <th>População</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">1234567</td>
+            </tr>
+            <tr>
+                <td>Rio</td>
+                <td class="num">663545345</td>
+            </tr>
+            <tr>
+                <td>DF</td>
+                <td class="num">44445667</td>
+            </tr>
+            <tr>
+                <td>Mais algum</td>
+                <td class="num">999999</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">3434434</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">4343434</td>
+            </tr>
+            <tr>
+                <td>Estado</td>
+                <td class="num">333333</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">99990</td>
+            </tr>
+            <tr>
+                <td>fdfdf</td>
+                <td class="num">34434344</td>
+            </tr>
+            <tr>
+                <td>hgdfdfasf</td>
+                <td class="num">34343434</td>
+            </tr>
+            <tr>
+                <td>Recife</td>
+                <td class="num">23233232</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3434434</td>
+            </tr>
+            <tr>
+                <td>Goias</td>
+                <td class="num">333333</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">000000009</td>
+            </tr>
+            <tr>
+                <td>Ceara</td>
+                <td class="num">11112</td>
+            </tr>
+            <tr>
+                <td>Piaui</td>
+                <td class="num">2121212</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">234567</td>
+            </tr>
+            <tr>
+                <td>RGS</td>
+                <td class="num">555678</td>
+            </tr>
+            <tr>
+                <td>RGN</td>
+                <td class="num">555678</td>
+            </tr>
+            <tr>
+                <td>Rondonia</td>
+                <td class="num">555678</td>
+            </tr>
+            <tr>
+                <td>dsdsddsd</td>
+                <td class="num">34343344</td>
+            </tr>
+            <tr>
+                <td>sdsdsdsd</td>
+                <td  class="num">434434</td>
+            </tr>
+            <tr>
+                <td>sgfsggs</td>
+                <td class="num">3443434</td>
+            </tr>
+            <tr>
+                <td>dfdfdffddf</td>
+                <td class="num">22222234</td>
+            </tr>
+            <tr>
+                <td>sdsdssd</td>
+                <td class="num">22222234</td>
+            </tr>
+            <tr>
+                <td>sdsdssd</td>
+                <td class="num">22222234</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th>Total</th>
+            <td class="num">293888874928</td>
+        </tfoot>
+
+    </table>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero commodi voluptatem, labore sit eveniet natus corrupti ducimus explicabo, suscipit veniam temporibus, eum sed laboriosam placeat est! Modi obcaecati eveniet excepturi.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero commodi voluptatem, labore sit eveniet natus corrupti ducimus explicabo, suscipit veniam temporibus, eum sed laboriosam placeat est! Modi obcaecati eveniet excepturi.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero commodi voluptatem, labore sit eveniet natus corrupti ducimus explicabo, suscipit veniam temporibus, eum sed laboriosam placeat est! Modi obcaecati eveniet excepturi.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero commodi voluptatem, labore sit eveniet natus corrupti ducimus explicabo, suscipit veniam temporibus, eum sed laboriosam placeat est! Modi obcaecati eveniet excepturi.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero commodi voluptatem, labore sit eveniet natus corrupti ducimus explicabo, suscipit veniam temporibus, eum sed laboriosam placeat est! Modi obcaecati eveniet excepturi.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero commodi voluptatem, labore sit eveniet natus corrupti ducimus explicabo, suscipit veniam temporibus, eum sed laboriosam placeat est! Modi obcaecati eveniet excepturi.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero commodi voluptatem, labore sit eveniet natus corrupti ducimus explicabo, suscipit veniam temporibus, eum sed laboriosam placeat est! Modi obcaecati eveniet excepturi.
+
+    </p>
+    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero commodi voluptatem, labore sit eveniet natus corrupti ducimus explicabo, suscipit veniam temporibus, eum sed laboriosam placeat est! Modi obcaecati eveniet excepturi.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero commodi voluptatem, labore sit eveniet natus corrupti ducimus explicabo, suscipit veniam temporibus, eum sed laboriosam placeat est! Modi obcaecati eveniet excepturi.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero commodi voluptatem, labore sit eveniet natus corrupti ducimus explicabo, suscipit veniam temporibus, eum sed laboriosam placeat est! Modi obcaecati eveniet excepturi.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero commodi voluptatem, labore sit eveniet natus corrupti ducimus explicabo, suscipit veniam temporibus, eum sed laboriosam placeat est! Modi obcaecati eveniet excepturi.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero commodi voluptatem, labore sit eveniet natus corrupti ducimus explicabo, suscipit veniam temporibus, eum sed laboriosam placeat est! Modi obcaecati eveniet excepturi.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero commodi voluptatem, labore sit eveniet natus corrupti ducimus explicabo, suscipit veniam temporibus, eum sed laboriosam placeat est! Modi obcaecati eveniet excepturi.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero commodi voluptatem, labore sit eveniet natus corrupti ducimus explicabo, suscipit veniam temporibus, eum sed laboriosam placeat est! Modi obcaecati eveniet excepturi.</p>
+        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero commodi voluptatem, labore sit eveniet natus corrupti ducimus explicabo, suscipit veniam temporibus, eum sed laboriosam placeat est! Modi obcaecati eveniet excepturi.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero commodi voluptatem, labore sit eveniet natus corrupti ducimus explicabo, suscipit veniam temporibus, eum sed laboriosam placeat est! Modi obcaecati eveniet excepturi.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero commodi voluptatem, labore sit eveniet natus corrupti ducimus explicabo, suscipit veniam temporibus, eum sed laboriosam placeat est! Modi obcaecati eveniet excepturi.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero commodi voluptatem, labore sit eveniet natus corrupti ducimus explicabo, suscipit veniam temporibus, eum sed laboriosam placeat est! Modi obcaecati eveniet excepturi.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero commodi voluptatem, labore sit eveniet natus corrupti ducimus explicabo, suscipit veniam temporibus, eum sed laboriosam placeat est! Modi obcaecati eveniet excepturi.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero commodi voluptatem, labore sit eveniet natus corrupti ducimus explicabo, suscipit veniam temporibus, eum sed laboriosam placeat est! Modi obcaecati eveniet excepturi.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero commodi voluptatem, labore sit eveniet natus corrupti ducimus explicabo, suscipit veniam temporibus, eum sed laboriosam placeat est! Modi obcaecati eveniet excepturi.</p>
+</body>
+</html>
