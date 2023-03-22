@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    background-color: rgb(238, 238, 238);
+}
+
+header{
+    background-color: pink;
+}
+
+header > h1{
+    padding: 10px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    text-shadow: 1px 1px 0px violet;
+}
+
+i#burguer{
+    background-color: rgba(175, 46, 169, 0.548);
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 8px;
+}
+
+#burguer:hover{
+    background-color: rgba(255, 166, 179, 0.685);
+    color: black;
+}
+
+menu{
+    display: none;
+}
+
+menu > ul {
+    list-style-type: none;
+}
+
+menu >ul > li{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(215, 159, 238);
+    color: white;
+    border-top: 1px solid white;
+}
+
+menu > ul > li:hover{
+    background-color: rgba(176, 48, 226, 0.5);
+}
+
+main{
+    width: 90vw;
+    background-color: white;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px; 
+    border-radius: 10px;}
+
+article > h2{
+    text-align: center;
+    background-color: pink;
+    color: white;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+article > p {
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 20px;
+}
